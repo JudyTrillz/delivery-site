@@ -17,12 +17,12 @@ body {
   font-size: var(--normal-font-size);
   font-family: var(--body-font);
   background-color: var(--body-color);
-    color: var(--text-color);
-    transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
+  color: var(--text-color);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 h1,

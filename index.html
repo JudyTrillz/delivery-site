@@ -10,6 +10,9 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
 
+    <!--=============== AOS CSS ===============-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="dist/css/styles.css" />
 
@@ -56,6 +59,8 @@
       <section class="home section" id="home">
         <div class="home__container container grid">
           <svg
+          data-aos="fade-left"
+          data-aos-duration="1500"
             class="svg__img svg__color home__banner"
             viewBox="0 0 554 325"
             xmlns="http://www.w3.org/2000/svg"
@@ -1405,7 +1410,7 @@
             </defs>
           </svg>
 
-          <div class="home__data">
+          <div class="home__data" data-aos="fade-right" data-aos-duration="1500">
             <h1 class="home__title">
               Order Products <br />
               Faster Easier
@@ -1423,7 +1428,7 @@
 
       <!--=============== ABOUT ===============-->
       <section class="about section container" id="about">
-        <div class="about__container grid">
+        <div class="about__container grid"  data-aos="zoom-in-up" data-aos-duration="2000">
           <div class="about__data">
             <h2 class="section__title-center">
               Find Out A Little More <br />
@@ -2079,8 +2084,8 @@
 
       <!--=============== SECURITY ===============-->
       <section class="security section container">
-        <div class="security__container grid">
-          <div class="security__data">
+        <div class="security__container grid" data-aos="fade-up-right" data-aos-duration="1500">
+          <div class="security__data" >
             <h2 class="section__title-center">
               Your Safety Is <br />
               Important
@@ -2774,12 +2779,12 @@
 
       <!--=============== SERVICES ===============-->
       <section class="services section container" id="services">
-        <h2 class="section__title">
+        <h2 class="section__title"  data-aos="fade-up-left" data-aos-duration="1500"> 
           Some Services We <br />
           Offer
         </h2>
 
-        <div class="services__container grid">
+        <div class="services__container grid"  data-aos="fade-up-left" data-aos-duration="1500" data-aos-delay="1000">
           <div class="services__data">
             <h3 class="service__subtitle">Payment Done</h3>
 
@@ -5469,7 +5474,7 @@
 
       <!--=============== APP ===============-->
       <section class="app section container">
-        <div class="app__container grid">
+        <div class="app__container grid" data-aos="flip-right" data-aos-duration="2000">
           <div class="app__data">
             <h2 class="section__title-center">
               Watch Your Delivery <br />
@@ -6479,7 +6484,8 @@
 
       <!--=============== CONTACT US ===============-->
       <section class="contact section container" id="contact">
-        <div class="contact__container grid">
+        <div class="contact__container grid"  data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
           <div class="contact__content">
             <h2 class="section__title-center">
               Contact Us From <br> Here
@@ -6557,7 +6563,15 @@
     <a href="#" class="scrollup" id="scrollup">
       <i class='bx bx-up-arrow-alt scrollup__icon'></i>
     </a>
+
+    <!--=============== AOS MAIN JS ===============-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/script.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
